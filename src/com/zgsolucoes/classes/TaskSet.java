@@ -1,3 +1,4 @@
+package com.zgsolucoes.classes;
 import java.util.Date;
 
 public class TaskSet implements Comparable<TaskSet>{
