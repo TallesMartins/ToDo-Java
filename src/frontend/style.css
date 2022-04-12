@@ -1,0 +1,107 @@
+:root{
+    --azule:#1d1b31;
+    --preto:#11101d;
+    --branco:#dfe0e0;
+    --back:#6C6A7D;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:var(--back);
+    color:var(--preto);
+}
+header{
+    text-align: center;
+}
+.container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.aba_todo{
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--branco);
+    padding: 5px;
+    margin: 5px;
+    background-color:var(--preto);
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+}
+.aba_todo .Buttons{
+    max-width: 100%;
+    position: absolute;
+    top: 35px;
+    width: 290px;
+    height: 50px;
+    border-style: solid;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+}
+.aba_todo .Buttons .buttonAdd{
+    width: 40px;
+    padding: 5px;
+    font-size: 24px;
+    color: var(--branco);
+    position: relative;
+    text-align: center;
+    top: 5px;
+    left: 5px;
+    border: none;
+    background-color:var(--preto);  
+    border-radius: 6px;
+    transition: all 0.5s ease;
+}
+
+.aba_todo .Buttons .buttonAdd:hover{
+    color: var(--azule);
+    background-color: var(--branco);
+}
+
+.aba_todo .Buttons .card{
+    max-width: 100%;
+    color: var(--branco);
+    margin-left: 5px;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--azule);
+    transition: all 0.5s ease;
+}
+.aba_todo .Buttons .card:hover{
+    color: var(--azule);
+    background-color: var(--branco);
+}
+.aba_todo .title_card{
+    position:absolute;
+    top: 5px;
+}
+@media screen and (max-width:700px){
+    #doing{
+        display: none;
+    }
+    #completed{
+        display: none;
+    }
+}
+@media screen and (max-width:1000px){
+    #doing{
+        display: none;
+    }
+
+}

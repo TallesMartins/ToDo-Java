@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="todo">
+        <h1>ToDo</h1>
+    </header>
+    <div class="container">
+        <div id="do" class="aba_todo fst">
+            <h2 class="title_card">To Do</h2>
+            <div class="Buttons">
+                <input id="inputCardToDo" class="card" type="text" placeholder="Max = 8" value="">
+                <button id="btnAddToDo" class="buttonAdd" ><i class='bx bx-check'></i></button>
+            </div>
+        </div>
+        <div id="doing" class="aba_todo snd">
+            <h2 class="title_card">Ongoing</h2>
+            <div class="Buttons">
+                <input id="inputCardOngoing" class="card" type="text" placeholder="Max = 8" value="">
+                <button id="btnAddOngoing"class="buttonAdd" ><i class='bx bx-check'></i></button>
+            </div>
+        </div>
+        <div id="completed" class="aba_todo trd">
+            <h2 class="title_card">Done</h2>
+            <div class="Buttons">
+                <input id="inputCardDone"class="card" type="text" placeholder="Max = 8" value="">
+                <button id="btnAddDone"class="buttonAdd"><i class='bx bx-check'></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
